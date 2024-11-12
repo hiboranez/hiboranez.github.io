@@ -214,12 +214,11 @@
               <p> QQ群号：243127688<br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/FlatMC_QQ_Group.jpg"
-                     
+                     data-src="/images/FlatMC_QQ_Group.jpg"
+                      alt="QQ群二维码"
                 ></p>
               </div>
-            </details>
-]]></content>
+            </details>]]></content>
       <categories>
         <category>FlatMC</category>
       </categories>

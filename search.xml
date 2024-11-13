@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>FlatMC v0.1.0.0 alpha 发布</title>
-    <url>/2024/11/11/FlatMC%20v0.1.0.0%20alpha%20%E5%8F%91%E5%B8%83/</url>
+    <url>/2024/11/11/flatmc_v0.1.0.0_alpha_release/</url>
     <content><![CDATA[<p>加入了多种方块（如空气、圆石、草方块等）、超平坦世界生成机制及新命令格式。新增玩家控制方式，支持PC和移动端操控，允许截图、显示坐标信息等。玩家可以通过多人联机功能加入局域网或服务器。引入了主菜单、设置、语言（中英）、背景音乐、调试屏幕等功能。游戏进入alpha测试版，支持数据存储、世界无限延伸、块状保存、多平台兼容，并提供官方服务器用于多人联机。</p>
 <h2 id="新内容"><a href="#新内容" class="headerlink" title="新内容"></a>新内容</h2><h3 id="方块"><a href="#方块" class="headerlink" title="方块"></a>方块</h3><ul>
 <li>空气<ul>

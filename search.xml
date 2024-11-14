@@ -204,7 +204,68 @@
 </ul>
 <h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>百度网盘 </summary>
               <div class='content'>
-              <p>链接: <a class="link"   href="https://pan.baidu.com/s/193hIs48Dm2zyDlZjCATX4w?pwd=wu59" >https://pan.baidu.com/s/193hIs48Dm2zyDlZjCATX4w?pwd=wu59 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br>提取码: wu59</p>
+              <p>链接: <a class="link"   href="https://pan.baidu.com/s/1yEWGqC69JEg-t7Le9pHy5g?pwd=9enm" >https://pan.baidu.com/s/1yEWGqC69JEg-t7Le9pHy5g?pwd=9enm <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br>提取码: 9enm </p>
+              </div>
+            </details>
+
+<details class="green" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>帮助改进 </summary>
+              <div class='content'>
+              <p>有任何Bug或改进意见可在此处留言<br>我在看到后会及时回复<br>您的每条建议都可能在日后被采纳！</p><p>如果有改进建议或新内容想法也可打开下面链接<br>【腾讯文档】对于FlatMC的帮助建议<br><a class="link"   href="https://docs.qq.com/sheet/DSWhEeHdnRVRZUEdL?tab=BB08J2" >https://docs.qq.com/sheet/DSWhEeHdnRVRZUEdL?tab=BB08J2 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+              </div>
+            </details>
+
+<details class="orange" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>加入QQ群 </summary>
+              <div class='content'>
+              <p>加入QQ群获取最新资讯，与开发人员实时沟通！<br>QQ群号：243127688<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/FlatMC_QQ_Group.jpg"
+                      alt="QQ群二维码"
+                ></p>
+              </div>
+            </details>]]></content>
+      <categories>
+        <category>FlatMC</category>
+      </categories>
+      <tags>
+        <tag>FlatMC</tag>
+        <tag>alpha</tag>
+        <tag>发布</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>FlatMC v0.1.0.1 alpha 发布</title>
+    <url>/2024/11/13/flatmc_v0.1.0.1_alpha_release/</url>
+    <content><![CDATA[<p>多人游戏专用服务器显示信息时间，Android平台返回导航优化，增加版本信息提示设置。更改方面，调整了菜单屏幕文字亮度，修复单人模式与多人模式的进入与编辑bug，设置文件的配置项缺失处理改为读取旧配置，修复聊天框无法拖动问题，优化多人游戏连接同步时的卡顿但仍存在抖动。</p>
+<h2 id="新内容"><a href="#新内容" class="headerlink" title="新内容"></a>新内容</h2><h3 id="常规"><a href="#常规" class="headerlink" title="常规"></a>常规</h3><h4 id="多人游戏"><a href="#多人游戏" class="headerlink" title="多人游戏"></a>多人游戏</h4><ul>
+<li>专用服务器后台会显示信息时间</li>
+</ul>
+<h4 id="多平台兼容"><a href="#多平台兼容" class="headerlink" title="多平台兼容"></a>多平台兼容</h4><ul>
+<li>Android平台导航返回不会直接退出游戏</li>
+</ul>
+<h4 id="版本信息提示"><a href="#版本信息提示" class="headerlink" title="版本信息提示"></a>版本信息提示</h4><ul>
+<li>增加了新的设置关键字<code>version</code>，当其与游戏版本不同时弹出版本说明</li>
+</ul>
+<h2 id="更改"><a href="#更改" class="headerlink" title="更改"></a>更改</h2><h3 id="常规-1"><a href="#常规-1" class="headerlink" title="常规"></a>常规</h3><h4 id="菜单屏幕"><a href="#菜单屏幕" class="headerlink" title="菜单屏幕"></a>菜单屏幕</h4><ul>
+<li>降低了单人模式上次修改时间文字的亮度</li>
+<li>修复了多人模式服务器退出后再点击单人模式加入世界会进入世界的bug</li>
+<li>修复了单人模式未选中世界点击编辑世界报错的bug</li>
+</ul>
+<h4 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h4><ul>
+<li>取代了设置文件若缺少配置项或不存在时，直接重新生成默认配置的操作。采用先尝试读取旧配置，若读取到则不重新生成。</li>
+</ul>
+<h4 id="聊天"><a href="#聊天" class="headerlink" title="聊天"></a>聊天</h4><ul>
+<li>修复了游戏内聊天框不能拖动的问题</li>
+</ul>
+<h4 id="多人游戏-1"><a href="#多人游戏-1" class="headerlink" title="多人游戏"></a>多人游戏</h4><ul>
+<li>修复了连接中断时显示服务器关闭的bug</li>
+</ul>
+<h4 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h4><ul>
+<li>优化了同步时产生的卡顿问题，但仍然存在抖动</li>
+</ul>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>百度网盘 </summary>
+              <div class='content'>
+              <p>链接: <a class="link"   href="https://pan.baidu.com/s/1yEWGqC69JEg-t7Le9pHy5g?pwd=9enm" >https://pan.baidu.com/s/1yEWGqC69JEg-t7Le9pHy5g?pwd=9enm <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br>提取码: 9enm </p>
               </div>
             </details>
 

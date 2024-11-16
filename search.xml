@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>FlatMC v0.1.0.0 alpha 发布</title>
-    <url>/2024/11/11/flatmc_v0.1.0.0_alpha_release/</url>
+    <title>FlatMC Alpha v0.1.0.0 发布</title>
+    <url>/2024/11/11/flatmc_alpha_v0.1.0.0_release/</url>
     <content><![CDATA[<p>加入了多种方块（如空气、圆石、草方块等）、超平坦世界生成机制及新命令格式。新增玩家控制方式，支持PC和移动端操控，允许截图、显示坐标信息等。玩家可以通过多人联机功能加入局域网或服务器。引入了主菜单、设置、语言（中英）、背景音乐、调试屏幕等功能。游戏进入alpha测试版，支持数据存储、世界无限延伸、块状保存、多平台兼容，并提供官方服务器用于多人联机。</p>
 <h2 id="新内容"><a href="#新内容" class="headerlink" title="新内容"></a>新内容</h2><h3 id="方块"><a href="#方块" class="headerlink" title="方块"></a>方块</h3><ul>
 <li>空气<ul>
@@ -234,8 +234,8 @@
       </tags>
   </entry>
   <entry>
-    <title>FlatMC v0.1.0.1 alpha 发布</title>
-    <url>/2024/11/13/flatmc_v0.1.0.1_alpha_release/</url>
+    <title>FlatMC Alpha v0.1.0.1 发布</title>
+    <url>/2024/11/13/flatmc_alpha_v0.1.0.1_release/</url>
     <content><![CDATA[<p>多人游戏专用服务器显示信息时间，Android平台返回导航优化，增加版本信息提示设置。更改方面，调整了菜单屏幕文字亮度，修复单人模式与多人模式的进入与编辑bug，设置文件的配置项缺失处理改为读取旧配置，修复聊天框无法拖动问题，优化多人游戏连接同步时的卡顿但仍存在抖动。</p>
 <h2 id="新内容"><a href="#新内容" class="headerlink" title="新内容"></a>新内容</h2><h3 id="常规"><a href="#常规" class="headerlink" title="常规"></a>常规</h3><h4 id="多人游戏"><a href="#多人游戏" class="headerlink" title="多人游戏"></a>多人游戏</h4><ul>
 <li>专用服务器后台会显示信息时间</li>
@@ -295,8 +295,8 @@
       </tags>
   </entry>
   <entry>
-    <title>FlatMC v0.1.1.0 alpha 发布</title>
-    <url>/2024/11/16/flatmc_v0.1.1.0_alpha_release/</url>
+    <title>FlatMC Alpha v0.1.1.0 发布</title>
+    <url>/2024/11/16/flatmc_alpha_v0.1.1.0_release/</url>
     <content><![CDATA[<p>新增内容包括多种方块，如基岩、矿石、工作台、钻石块等，以及16种颜色的羊毛；新增物品栏功能，按E键可打开，显示物品名称。玩家控制增加转身动画，修复暂停界面UI调整问题。版本支持低版本存档向高版本转换，新增服务器版本识别功能。调整了Android平台的导航返回操作。</p>
 <h2 id="新内容"><a href="#新内容" class="headerlink" title="新内容"></a>新内容</h2><h3 id="方块"><a href="#方块" class="headerlink" title="方块"></a>方块</h3><ul>
 <li>基岩<ul>

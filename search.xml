@@ -377,11 +377,9 @@
 <h4 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h4><ul>
 <li>增加了服务器版本识别，若有冲突则拒绝其访问服务器</li>
 </ul>
-<h2 id="更改"><a href="#更改" class="headerlink" title="更改"></a>更改</h2><h4 id="玩家控制-1"><a href="#玩家控制-1" class="headerlink" title="玩家控制"></a>玩家控制</h4><ul>
-<li>修复了暂停界面可以调整其它UI的bug</li>
-</ul>
-<h3 id="常规-1"><a href="#常规-1" class="headerlink" title="常规"></a>常规</h3><h4 id="菜单屏幕"><a href="#菜单屏幕" class="headerlink" title="菜单屏幕"></a>菜单屏幕</h4><ul>
+<h2 id="更改"><a href="#更改" class="headerlink" title="更改"></a>更改</h2><h3 id="常规-1"><a href="#常规-1" class="headerlink" title="常规"></a>常规</h3><h4 id="菜单屏幕"><a href="#菜单屏幕" class="headerlink" title="菜单屏幕"></a>菜单屏幕</h4><ul>
 <li>调整了Android平台导航返回的操作</li>
+<li>修复了暂停界面可以调整其它UI的bug</li>
 </ul>
 <h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>百度网盘 </summary>
               <div class='content'>

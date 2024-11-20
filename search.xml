@@ -202,7 +202,7 @@
 <h4 id="版本信息提示"><a href="#版本信息提示" class="headerlink" title="版本信息提示"></a>版本信息提示</h4><ul>
 <li>玩家在启动游戏时游戏会判断玩家本地是否存在<code>configs.cfg</code>文件，若不存在则判定为初次打开游戏，会弹出版本信息，以后不再显示</li>
 </ul>
-<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><details class="pink" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>夸克网盘 </summary>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>夸克网盘 </summary>
               <div class='content'>
               <p>链接: <a class="link"   href="https://pan.quark.cn/s/5758ba73b40e" >https://pan.quark.cn/s/5758ba73b40e <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
               </div>
@@ -263,7 +263,7 @@
 <h4 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h4><ul>
 <li>优化了同步时产生的卡顿问题，但仍然存在抖动</li>
 </ul>
-<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><details class="pink" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>夸克网盘 </summary>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>夸克网盘 </summary>
               <div class='content'>
               <p>链接: <a class="link"   href="https://pan.quark.cn/s/5758ba73b40e" >https://pan.quark.cn/s/5758ba73b40e <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
               </div>
@@ -381,7 +381,7 @@
 <li>调整了Android平台导航返回的操作</li>
 <li>修复了暂停界面可以调整其它UI的bug</li>
 </ul>
-<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><details class="pink" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>夸克网盘 </summary>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>夸克网盘 </summary>
               <div class='content'>
               <p>链接: <a class="link"   href="https://pan.quark.cn/s/5758ba73b40e" >https://pan.quark.cn/s/5758ba73b40e <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
               </div>

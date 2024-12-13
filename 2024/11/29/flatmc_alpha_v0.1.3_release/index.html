@@ -13,18 +13,27 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/"/>
+    <link rel="canonical" href="http://example.com/2024/11/29/flatmc_alpha_v0.1.3_release/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+        <meta name="description" content="新版本增加了火把、玩家受伤和死亡动画、登录离线和传送动画，并引入了光线传播和日光效果。地形生成使用柏林噪声，支持平原生物群落。命令格式调整了&#x2F;gamemode语法。玩家控制方面取消了碰撞箱，修复了多处bug。改进了图标、菜单标题、渲染区块限制和调试性能。修复了多人游戏相关问题，如区块卡死、同步更新错误等。此外，修改了区块存储格式和屏幕移动速度，提高了游戏体验。 新内容方块 火把 照明方块">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FlatMC Alpha v0.1.3 发布">
+<meta property="og:url" content="http://example.com/2024/11/29/flatmc_alpha_v0.1.3_release/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="新版本增加了火把、玩家受伤和死亡动画、登录离线和传送动画，并引入了光线传播和日光效果。地形生成使用柏林噪声，支持平原生物群落。命令格式调整了&#x2F;gamemode语法。玩家控制方面取消了碰撞箱，修复了多处bug。改进了图标、菜单标题、渲染区块限制和调试性能。修复了多人游戏相关问题，如区块卡死、同步更新错误等。此外，修改了区块存储格式和屏幕移动速度，提高了游戏体验。 新内容方块 火把 照明方块">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/FlatMC_QQ_Group.jpg">
+<meta property="article:published_time" content="2024-11-28T21:35:05.470Z">
+<meta property="article:modified_time" content="2024-12-13T20:16:45.189Z">
 <meta property="article:author" content="HiBoranez">
+<meta property="article:tag" content="FlatMC">
+<meta property="article:tag" content="发布">
+<meta property="article:tag" content="Alpha">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/FlatMC_QQ_Group.jpg">
     
     
     <!--- Icon Part-->
@@ -36,7 +45,7 @@
     
     <title>
         
-            HiBoranez.Work - 做些有趣的工作
+            FlatMC Alpha v0.1.3 发布 | HiBoranez.Work
         
     </title>
 
@@ -115,49 +124,19 @@
 <main class="page-container" id="swup">
 
     
-        
-
-<div class="home-banner-container flex justify-center items-center transition-fade relative">
-    
-    <div class="home-banner-background transition-fade absolute top-0 left-0 w-screen h-screen scale-125 sm:scale-110 box-border will-change-transform bg-cover">
-        <img src="/images/wallhaven-wqery6-light.webp" alt="home-banner-background" class="w-full h-full object-cover dark:hidden">
-        <img src="/images/wallhaven-wqery6-dark.webp" alt="home-banner-background" class="w-full h-full object-cover hidden dark:block">
-    </div>
-    
-    <div class="content mt-8 flex flex-col justify-center items-center">
-        <div class="description flex flex-col justify-center items-center w-screen font-medium text-center"
-        
-        >
-            HiBoranez.Work
-            
-            
-                <p><i id="subtitle"></i></p>
-            
-        </div>
-        
-    </div>
-    <script>
-        const scrollToMain = ()=> {
-            console.log('scroll');
-            const target = document.querySelector('.main-content-container');
-            target.scrollIntoView({ behavior: 'smooth'});
-        }
-    </script>
-</div>
-    
 
     <div class="main-content-container flex flex-col justify-between min-h-dvh">
 
 
         <div class="main-content-header">
             <header class="navbar-container px-6 md:px-12">
-    <div class="navbar-content transition-navbar has-home-banner">
+    <div class="navbar-content transition-navbar ">
         <div class="left">
             
             <a class="logo-title" href="/">
-                <h1>
+                
                 HiBoranez.Work
-                </h1>
+                
             </a>
         </div>
 
@@ -171,7 +150,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active"
+                                <a class=""
                                    href="/"
                                         >
                                     <i class="fa-solid fa-house fa-fw"></i>
@@ -263,7 +242,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
                            href="/"
                         >
                             <span>
@@ -411,128 +390,53 @@
         <div class="main-content-body">
 
             
-                <div class="home-sidebar-container">
-    <div class="sticky-container sticky">
-        
-        
-            
-                <div class="sidebar-links">
-                    <div class="site-info">
-                        <div class="site-name">HiBoranez.Work</div>
-                        
-                    </div>
-                    
-                        
-                            
-                                <a class="links" href="/">
-                                    
-                                        <i class="fa-regular fa-house icon-space"></i>
-                                    
-                                    <span class="link-name">首页</span>
-                                </a>
-                            
-                        
-                            
-                                <a class="links" href="/categories">
-                                    
-                                        <i class="fa-regular fa-folder icon-space"></i>
-                                    
-                                    <span class="link-name">分类</span>
-                                </a>
-                            
-                        
-                            
-                                <a class="links" href="/tags">
-                                    
-                                        <i class="fa-regular fa-tags icon-space"></i>
-                                    
-                                    <span class="link-name">标签</span>
-                                </a>
-                            
-                        
-                            
-                                <a class="links" href="/essays">
-                                    
-                                        <i class="fa-regular fa-comment-dots icon-space"></i>
-                                    
-                                    <span class="link-name">留言</span>
-                                </a>
-                            
-                        
-                    
-                </div>
-            
-            <div class="sidebar-content"  marginTop >
-                <div class="avatar flex justify-center">
-    <img src="/images/redefine-logo.webp">
-</div>
-                <div class="author flex flex-col justify-center my-2.5 mx-0">
-    <div class="name">薄言EZ</div>
-    
-        <div class="label">Lv1</div>
-    
-</div>
-                <div class="statistics flex justify-around my-2.5">
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
-        <div class="label text-third-text-color text-sm">标签</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
-        <div class="label text-third-text-color text-sm">分类</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">6</div>
-        <div class="label text-third-text-color text-sm">文章</div>
-    </a>
-</div>
-            </div>
-        
-
-    </div>
-</div>
-
-            
 
             <div class="main-content">
 
                 
-                    <div class="home-content-container">
-    <ul class="home-article-list">
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">FlatMC Alpha v0.1.3 发布</h1>
+                </div>
+            
+            </div>
+
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/11/29/flatmc_alpha_v0.1.3_release/">
-                            FlatMC Alpha v0.1.3 发布
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/redefine-logo.webp">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">薄言EZ</span>
                         
-                            
-                            新版本增加了火把、玩家受伤和死亡动画、登录离线和传送动画，并引入了光线传播和日光效果。地形生成使用柏林噪声，支持平原生物群落。命令格式调整了&#x2F;gamemode语法。玩家控制方面取消了碰...
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
                         
                     </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Nov 29 2024 05:35:05 GMT+0800">
-                
-                    2024-11-29
-                
-            </span>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-11-29 05:35:05</span>
+        <span class="mobile">2024-11-29 05:35:05</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-12-14 04:16:45</span>
+            <span class="mobile">2024-12-14 04:16:45</span>
+            <span class="hover-info">更新</span>
         </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
             <ul>
                 
                 
@@ -546,439 +450,279 @@
                 
             </ul>
         </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/FlatMC/">FlatMC</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/%E5%8F%91%E5%B8%83/">发布</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/Alpha/">Alpha</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2024/11/29/flatmc_alpha_v0.1.3_release/">阅读全文<span class="seo-reader-text">FlatMC Alpha v0.1.3 发布</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/11/24/flatmc_alpha_v0.1.2.0_release/">
-                            FlatMC Alpha v0.1.2.0 发布
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            修复了多个玩家控制问题，如菜单滑行bug、放置方块判定不一致及右侧跳跃按钮材质问题。区块渲染方式改为部分加载，自动释放不活跃区块。优化了协议，解决了服务器渲染和大批量发送区块信息导致的内存占用和...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sun Nov 24 2024 11:50:34 GMT+0800">
-                
-                    2024-11-24
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
             <ul>
                 
+                    <li>
+                        <a href="/tags/FlatMC/">FlatMC</a>&nbsp;
+                    </li>
                 
-                    
-                        
-                        <li>
-                            <a href="/categories/FlatMC/">FlatMC</a>&nbsp;
-                        </li>
-                    
-                    
+                    <li>
+                        | <a href="/tags/%E5%8F%91%E5%B8%83/">发布</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Alpha/">Alpha</a>&nbsp;
+                    </li>
                 
             </ul>
         </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/FlatMC/">FlatMC</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/%E5%8F%91%E5%B8%83/">发布</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/Alpha/">Alpha</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
+    
 
-    <a href="/2024/11/24/flatmc_alpha_v0.1.2.0_release/">阅读全文<span class="seo-reader-text">FlatMC Alpha v0.1.2.0 发布</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
 </div>
 
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/11/23/flatmc_alpha_v0.1.1.1_release/">
-                            FlatMC Alpha v0.1.1.1 发布
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            新增鼠标中键&#x2F;双击屏幕拾取方块功能，支持Windows x86-32位。修复多项BUG，包括移动端物品栏操作、飞行状态抖动、玩家转身速度与帧率关联等问题。优化按钮透明度和功能，设置中限...
-                        
                     </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sat Nov 23 2024 09:27:04 GMT+0800">
-                
-                    2024-11-23
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/FlatMC/">FlatMC</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/FlatMC/">FlatMC</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/%E5%8F%91%E5%B8%83/">发布</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/Alpha/">Alpha</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2024/11/23/flatmc_alpha_v0.1.1.1_release/">阅读全文<span class="seo-reader-text">FlatMC Alpha v0.1.1.1 发布</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
                 </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <p>新版本增加了火把、玩家受伤和死亡动画、登录离线和传送动画，并引入了光线传播和日光效果。地形生成使用柏林噪声，支持平原生物群落。命令格式调整了&#x2F;gamemode语法。玩家控制方面取消了碰撞箱，修复了多处bug。改进了图标、菜单标题、渲染区块限制和调试性能。修复了多人游戏相关问题，如区块卡死、同步更新错误等。此外，修改了区块存储格式和屏幕移动速度，提高了游戏体验。</p>
+<h2 id="新内容"><a href="#新内容" class="headerlink" title="新内容"></a>新内容</h2><h3 id="方块"><a href="#方块" class="headerlink" title="方块"></a>方块</h3><ul>
+<li>火把<ul>
+<li>照明方块，目前可以悬空</li>
+</ul>
+</li>
+</ul>
+<h3 id="游戏内容"><a href="#游戏内容" class="headerlink" title="游戏内容"></a>游戏内容</h3><h4 id="游戏玩法"><a href="#游戏玩法" class="headerlink" title="游戏玩法"></a>游戏玩法</h4><ul>
+<li>加入了生存模式</li>
+<li>加入了玩家受伤提示</li>
+<li>加入了玩家死亡动画</li>
+<li>加入了玩家登录离线和传送动画</li>
+</ul>
+<h4 id="光照渲染"><a href="#光照渲染" class="headerlink" title="光照渲染"></a>光照渲染</h4><ul>
+<li>加入了光线传播</li>
+<li>加入了日光</li>
+</ul>
+<h3 id="世界生成"><a href="#世界生成" class="headerlink" title="世界生成"></a>世界生成</h3><h4 id="地形生成"><a href="#地形生成" class="headerlink" title="地形生成"></a>地形生成</h4><ul>
+<li>加入了柏林噪声生成自然地形，仅支持平原，种子默认唯一</li>
+</ul>
+<h2 id="更改"><a href="#更改" class="headerlink" title="更改"></a>更改</h2><h3 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h3><ul>
+<li><code>/gamemode</code><ul>
+<li>更改玩家的游戏模式，语法如下：<ul>
+<li><code>/gamemode &lt;模式&gt;</code></li>
+<li><code>模式仅支持：creative、survival、1、0</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="游戏内容-1"><a href="#游戏内容-1" class="headerlink" title="游戏内容"></a>游戏内容</h3><h4 id="玩家控制"><a href="#玩家控制" class="headerlink" title="玩家控制"></a>玩家控制</h4><ul>
+<li>取消了玩家之间的碰撞箱</li>
+<li>修复了pc端同时左键与右键的快速破坏放置bug，改为无操作</li>
+<li>玩家在方块内时，速度将会被置0</li>
+<li>修复了聊天界面鼠标滚轮会修改快捷栏选中方块的bug</li>
+</ul>
+<h3 id="常规"><a href="#常规" class="headerlink" title="常规"></a>常规</h3><h4 id="图标"><a href="#图标" class="headerlink" title="图标"></a>图标</h4><ul>
+<li>修改了游戏图标</li>
+</ul>
+<h4 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h4><ul>
+<li>不再将第四位版本号纳入命名中，第四位版本号不会影响游戏兼容性</li>
+</ul>
+<h4 id="菜单屏幕"><a href="#菜单屏幕" class="headerlink" title="菜单屏幕"></a>菜单屏幕</h4><ul>
+<li>修改了主菜单标题</li>
+<li>修复了可以多次弹出二次确认窗口的bug</li>
+</ul>
+<h4 id="闪烁标语"><a href="#闪烁标语" class="headerlink" title="闪烁标语"></a>闪烁标语</h4><h4 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h4><ul>
+<li>渲染区块上限修改为4</li>
+</ul>
+<h4 id="调试屏幕和性能分析"><a href="#调试屏幕和性能分析" class="headerlink" title="调试屏幕和性能分析"></a>调试屏幕和性能分析</h4><ul>
+<li>修复了小地图和其他ui的遮挡bug</li>
+</ul>
+<h4 id="屏幕移动"><a href="#屏幕移动" class="headerlink" title="屏幕移动"></a>屏幕移动</h4><ul>
+<li>加快了屏幕移动速度</li>
+</ul>
+<h4 id="区块存储格式"><a href="#区块存储格式" class="headerlink" title="区块存储格式"></a>区块存储格式</h4><ul>
+<li>区块加载名称由<code>chunck</code>修正为<code>chunk</code></li>
+</ul>
+<h4 id="多人游戏"><a href="#多人游戏" class="headerlink" title="多人游戏"></a>多人游戏</h4><ul>
+<li>修复了在未加载区块内操作导致区块卡没的bug</li>
+<li>修复了在未加载区块内操作小地图同步更新的bug</li>
+<li>修复了玩家频繁弹回的bug</li>
+<li>修复了客户端加载时收到指令崩溃的bug</li>
+</ul>
+<h4 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h4><ul>
+<li>服务器加入了对渲染区块数量的判定限制</li>
+</ul>
+<h4 id="多平台兼容"><a href="#多平台兼容" class="headerlink" title="多平台兼容"></a>多平台兼容</h4><ul>
+<li>不再兼容windows_arm64架构</li>
+</ul>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>夸克网盘 </summary>
+              <div class='content'>
+              <p>链接: <a class="link"   target="_blank" rel="noopener" href="https://pan.quark.cn/s/fa5b62231f15" >https://pan.quark.cn/s/fa5b62231f15 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+              </div>
+            </details>
+
+<details class="green" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>帮助改进 </summary>
+              <div class='content'>
+              <p>有任何Bug或改进意见可在此处留言<br>我在看到后会及时回复<br>您的每条建议都可能在日后被采纳！</p><p>如果有改进建议或新内容想法请填写该收集表：<br><a class="link"   target="_blank" rel="noopener" href="https://docs.qq.com/form/page/DRk9uVmFLT2ZxZFN3" >https://docs.qq.com/form/page/DRk9uVmFLT2ZxZFN3 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br>您的建议将会在此处被回复：<br><a class="link"   target="_blank" rel="noopener" href="https://docs.qq.com/sheet/DRm1nVVNBSGFmVmxi?tab=ss_x8ty3m" >https://docs.qq.com/sheet/DRm1nVVNBSGFmVmxi?tab=ss_x8ty3m <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+              </div>
+            </details>
+
+<details class="orange" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>加入QQ群 </summary>
+              <div class='content'>
+              <p>加入QQ群获取最新资讯，与开发人员实时沟通！<br>QQ群号：243127688<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/FlatMC_QQ_Group.jpg"
+                      alt="QQ群二维码"
+                ></p>
+              </div>
+            </details>
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> FlatMC Alpha v0.1.3 发布</li>
+        <li><strong>作者:</strong> 薄言EZ</li>
+        <li><strong>创建于
+                :</strong> 2024-11-29 05:35:05</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 2024-12-14 04:16:45
             </li>
         
-            <li class="home-article-item">
+        <li>
+            <strong>链接:</strong> https://hiboranez.work/2024/11/29/flatmc_alpha_v0.1.3_release/
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
 
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/11/16/flatmc_alpha_v0.1.1.0_release/">
-                            FlatMC Alpha v0.1.1.0 发布
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            新增内容包括多种方块，如基岩、矿石、工作台、钻石块等，以及16种颜色的羊毛；新增物品栏功能，按E键可打开，显示物品名称。玩家控制增加转身动画，修复暂停界面UI调整问题。版本支持低版本存档向高版本...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sat Nov 16 2024 09:35:01 GMT+0800">
-                
-                    2024-11-16
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/FlatMC/">FlatMC</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/FlatMC/">FlatMC</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/%E5%8F%91%E5%B8%83/">发布</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/Alpha/">Alpha</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2024/11/16/flatmc_alpha_v0.1.1.0_release/">阅读全文<span class="seo-reader-text">FlatMC Alpha v0.1.1.0 发布</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/11/13/flatmc_alpha_v0.1.0.1_release/">
-                            FlatMC Alpha v0.1.0.1 发布
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            多人游戏专用服务器显示信息时间，Android平台返回导航优化，增加版本信息提示设置。更改方面，调整了菜单屏幕文字亮度，修复单人模式与多人模式的进入与编辑bug，设置文件的配置项缺失处理改为读取...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed Nov 13 2024 01:08:33 GMT+0800">
-                
-                    2024-11-13
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/FlatMC/">FlatMC</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/FlatMC/">FlatMC</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/%E5%8F%91%E5%B8%83/">发布</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/Alpha/">Alpha</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2024/11/13/flatmc_alpha_v0.1.0.1_release/">阅读全文<span class="seo-reader-text">FlatMC Alpha v0.1.0.1 发布</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/11/11/flatmc_alpha_v0.1.0.0_release/">
-                            FlatMC Alpha v0.1.0.0 发布
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            加入了多种方块（如空气、圆石、草方块等）、超平坦世界生成机制及新命令格式。新增玩家控制方式，支持PC和移动端操控，允许截图、显示坐标信息等。玩家可以通过多人联机功能加入局域网或服务器。引入了主菜...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Nov 11 2024 23:33:53 GMT+0800">
-                
-                    2024-11-11
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/FlatMC/">FlatMC</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/FlatMC/">FlatMC</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/%E5%8F%91%E5%B8%83/">发布</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/Alpha/">Alpha</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2024/11/11/flatmc_alpha_v0.1.0.0_release/">阅读全文<span class="seo-reader-text">FlatMC Alpha v0.1.0.0 发布</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
+            
+                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 进行许可。
+            
+        </li>
     </ul>
-
-    <div class="home-paginator px-7 py-5">
-        <div class="paginator">
-    <span class="page-number current">1</span>
 </div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/FlatMC/">#FlatMC</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/%E5%8F%91%E5%B8%83/">#发布</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/Alpha/">#Alpha</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/11/24/flatmc_alpha_v0.1.2.0_release/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">FlatMC Alpha v0.1.2.0 发布</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        评论
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'waline.hiboranez.work',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">目录</div>
+        <div class="page-title">FlatMC Alpha v0.1.3 发布</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E5%86%85%E5%AE%B9"><span class="nav-text">新内容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E5%9D%97"><span class="nav-text">方块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B8%B8%E6%88%8F%E5%86%85%E5%AE%B9"><span class="nav-text">游戏内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%96%E7%95%8C%E7%94%9F%E6%88%90"><span class="nav-text">世界生成</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9"><span class="nav-text">更改</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%91%BD%E4%BB%A4%E6%A0%BC%E5%BC%8F"><span class="nav-text">命令格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B8%B8%E6%88%8F%E5%86%85%E5%AE%B9-1"><span class="nav-text">游戏内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E8%A7%84"><span class="nav-text">常规</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80"><span class="nav-text">下载地址</span></a></li></ol>
 
     </div>
 </div>
+        </div>
+    
+</div>
 
-                    <div class="comment-container pjax"></div>
+
+
                 
 
             </div>
@@ -1059,6 +803,27 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
@@ -1172,7 +937,6 @@
         containers: ["#swup"],
     });
 </script>
-
 
 
 

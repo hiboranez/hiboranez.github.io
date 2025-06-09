@@ -660,8 +660,9 @@
   </entry>
   <entry>
     <title>FlatMC Alpha v0.2.0 发布</title>
-    <url>/2024/12/20/flatmc_alpha_v0.2.0_release/</url>
-    <content><![CDATA[<h2 id="更新内容"><a href="#更新内容" class="headerlink" title="更新内容"></a>更新内容</h2><h3 id="方块"><a href="#方块" class="headerlink" title="方块"></a>方块</h3><h4 id="基岩"><a href="#基岩" class="headerlink" title="基岩"></a>基岩</h4><ul>
+    <url>/2025/06/09/flatmc_alpha_v0.2.0_release/</url>
+    <content><![CDATA[<p>新版本新增了多种方块类型，涵盖石头、木头、砂砾、植物等材质，丰富了游戏内容和玩法。新增方块包括基岩、钻石矿石、绿宝石矿石等稀有资源方块，支持自然生成或通过工作台合成获取。部分方块具备特殊功能，如工作台可用于合成、梯子可用于攀爬、耕地可种植作物等。多数方块支持对应工具加速挖掘，不同方块设置了挖掘等级，提升了挖掘机制的层次性。新增了光源方块如点燃的熔炉、南瓜灯和萤石，增强了环境光照表现。部分方块只能在创造模式中获取，用于构建或展示。</p>
+<h2 id="更新内容"><a href="#更新内容" class="headerlink" title="更新内容"></a>更新内容</h2><h3 id="方块"><a href="#方块" class="headerlink" title="方块"></a>方块</h3><h4 id="基岩"><a href="#基岩" class="headerlink" title="基岩"></a>基岩</h4><ul>
 <li>一种石头类型的方块，生存模式下不可挖掘</li>
 <li>只能在创造模式中获取</li>
 </ul>
